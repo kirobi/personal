@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>John Njoroge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="python,timebanking">
+    <meta name="author" content="kirobi">
+
+    <!-- Le styles -->
+    <link href="{{STATIC_URL}}assets/css/bootstrap.css" rel="stylesheet">
+      <link href="{{STATIC_URL}}assets/css/todo.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+    <link href="{{STATIC_URL}}assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{STATIC_URL}}assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{STATIC_URL}}assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{STATIC_URL}}assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{STATIC_URL}}assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{STATIC_URL}}assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">John Njoroge </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="https://www.odesk.com/">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h2>Web Development Ninja!</h2>
+        <p>Why dint someone tell me about that! I wil strive never to be obsolete... I machines can learn i too can!.</p>
+
+		<!-- START Hire Me on oDesk Widget -->
+    <script src="https://www.odesk.com/widgets/providers/v1/link/~~5337a3ae07fb32d7.js"></script>
+<!-- END Hire Me on oDesk Widget -->
+            
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2><i class="alert-success">Web development</i></h2>
+          <p>Highly available,accessible and scalable web applications!... you heard me!</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2><i class="alert-success">Machine learning</i></h2>
+          <p>Collective intelligence ... you heard me!</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2><i class="alert-success">Timebanking E-talanta</i></h2>
+          <p>An hour for an hour.. you heard me!A cowpath is the rough, heavily trodden track that gets people from one point to
+              another. A cowpath exists because it’s being used. It might not be the best possible
+              way to move around, but at some point it was the most practical working solution.</p>
+          <p><a class="btn" href="https://www.odesk.com/blog/author/jenna-weiner/">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+
+
+        </div>
+
+    <ul class="uneditable-input">
+        {% for books in info %}
+          <li class><i class="icon-book"></i>{{ books }}</li>
+        {% endfor %}
+    </ul>
+        <hr>
+
+
+        <footer>
+        <p>Django site &copy; <a href="http://www.dextraz.com">dextraz 2012 </a>   </p>
+
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{STATIC_URL}}assets/js/jquery.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-transition.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-alert.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-modal.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-dropdown.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-scrollspy.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-tab.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-tooltip.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-popover.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-button.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-collapse.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-carousel.js"></script>
+    <script src="{{STATIC_URL}}assets/js/bootstrap-typeahead.js"></script>
+    <script src="{{STATIC_URL}}assets/js/todo.js"></script>
+    <script src="{{STATIC_URL}}assets/js/angular.js"></script>
+
+  </body>
+</html>
